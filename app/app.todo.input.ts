@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
      
 @Component({
+    moduleId: module.id,
     selector: 'todo-input',
-    template: `<label>Введите имя:</label>
-                 <input [(ngModel)]="name" placeholder="name">
-                 <h1>Добро пожаловать {{name}}!</h1>`
+    templateUrl: 'template/todo.input.html' 
 })
 export class TodoInput { 
-    name= '';
+    task= '';
 }
